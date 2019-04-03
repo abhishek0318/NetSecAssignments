@@ -31,12 +31,6 @@ class TripleDES:
         output = self.des.run(self.k2, output, DECRYPT)
         output = self.des.run(self.k1, output, ENCRYPT)
         return np.uint64(int(output, 2))
-
-def xor(n1, n2):
-    """
-    Args:
-        n1: 
-    """
         
 class ANSIX917:
     def __init__(self, v0, k1, k2):
